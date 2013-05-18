@@ -23,6 +23,13 @@
 		4DDECE981746983D00489D12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECE731746983C00489D12 /* Foundation.framework */; };
 		4DDECEA01746983D00489D12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDECE9E1746983D00489D12 /* InfoPlist.strings */; };
 		4DDECEA31746983D00489D12 /* Metronome_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDECEA21746983D00489D12 /* Metronome_DemoTests.m */; };
+		4DDECEAE17469A6600489D12 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEAC17469A6600489D12 /* PebbleKit.framework */; };
+		4DDECEAF17469A6600489D12 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEAD17469A6600489D12 /* PebbleVendor.framework */; };
+		4DDECEB117469A8C00489D12 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEB017469A8C00489D12 /* ExternalAccessory.framework */; };
+		4DDECEB317469A9C00489D12 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEB217469A9C00489D12 /* libz.dylib */; };
+		4DDECEB517469AA100489D12 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEB417469AA100489D12 /* CoreBluetooth.framework */; };
+		4DDECEB717469AB100489D12 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEB617469AB100489D12 /* CoreMotion.framework */; };
+		4DDECEB917469AB700489D12 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDECEB817469AB700489D12 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,13 @@
 		4DDECE9F1746983D00489D12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4DDECEA11746983D00489D12 /* Metronome_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Metronome_DemoTests.h; sourceTree = "<group>"; };
 		4DDECEA21746983D00489D12 /* Metronome_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metronome_DemoTests.m; sourceTree = "<group>"; };
+		4DDECEAC17469A6600489D12 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "External Frameworks/PebbleKit.framework"; sourceTree = "<group>"; };
+		4DDECEAD17469A6600489D12 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "External Frameworks/PebbleVendor.framework"; sourceTree = "<group>"; };
+		4DDECEB017469A8C00489D12 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		4DDECEB217469A9C00489D12 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4DDECEB417469AA100489D12 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4DDECEB617469AB100489D12 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4DDECEB817469AB700489D12 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +79,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDECEB917469AB700489D12 /* MessageUI.framework in Frameworks */,
+				4DDECEB717469AB100489D12 /* CoreMotion.framework in Frameworks */,
+				4DDECEB517469AA100489D12 /* CoreBluetooth.framework in Frameworks */,
+				4DDECEB317469A9C00489D12 /* libz.dylib in Frameworks */,
+				4DDECEB117469A8C00489D12 /* ExternalAccessory.framework in Frameworks */,
 				4DDECE721746983C00489D12 /* UIKit.framework in Frameworks */,
 				4DDECE741746983C00489D12 /* Foundation.framework in Frameworks */,
 				4DDECE761746983C00489D12 /* CoreGraphics.framework in Frameworks */,
+				4DDECEAE17469A6600489D12 /* PebbleKit.framework in Frameworks */,
+				4DDECEAF17469A6600489D12 /* PebbleVendor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +127,13 @@
 		4DDECE701746983C00489D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DDECEB817469AB700489D12 /* MessageUI.framework */,
+				4DDECEB617469AB100489D12 /* CoreMotion.framework */,
+				4DDECEB417469AA100489D12 /* CoreBluetooth.framework */,
+				4DDECEB217469A9C00489D12 /* libz.dylib */,
+				4DDECEB017469A8C00489D12 /* ExternalAccessory.framework */,
+				4DDECEAC17469A6600489D12 /* PebbleKit.framework */,
+				4DDECEAD17469A6600489D12 /* PebbleVendor.framework */,
 				4DDECE711746983C00489D12 /* UIKit.framework */,
 				4DDECE731746983C00489D12 /* Foundation.framework */,
 				4DDECE751746983C00489D12 /* CoreGraphics.framework */,
@@ -382,9 +410,14 @@
 		4DDECEA71746983D00489D12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metronome-Demo/Metronome-Demo-Prefix.pch";
 				INFOPLIST_FILE = "Metronome-Demo/Metronome-Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,9 +426,14 @@
 		4DDECEA81746983D00489D12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Metronome-Demo/Metronome-Demo-Prefix.pch";
 				INFOPLIST_FILE = "Metronome-Demo/Metronome-Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +492,7 @@
 				4DDECEA81746983D00489D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DDECEA91746983D00489D12 /* Build configuration list for PBXNativeTarget "Metronome-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +501,7 @@
 				4DDECEAB1746983D00489D12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
